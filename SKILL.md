@@ -1,6 +1,17 @@
 ---
 name: voice-reply
-description: Enable and control spoken or audio replies in OpenClaw using the built-in tts tool, [[tts:...]] directives, and /tts commands. Use when the user asks to read a reply aloud, send a voice note, convert text to speech, switch TTS provider or voice, or configure automatic spoken replies. Also use for Chinese requests like "语音回复", "发语音", "读出来", "播报", "朗读", "把这段转成语音", or "切换音色".
+description: |
+  🔊 OpenClaw 语音回复技能 - 让 AI "说话"
+  
+  支持 3 种 TTS 输出方式：
+  1. 即时语音 - 单次生成音频，无需改变默认设置
+  2. 会话模式 - 用 /tts 命令控制当前会话的语音行为（始终语音/收到语音时回复/标记触发）
+  3. 持久配置 - 修改 openclaw.json 设置默认语音回复行为
+  
+  支持多种 TTS 提供商：Edge TTS（免 Key）、OpenAI GPT-4o-mini TTS、ElevenLabs
+  支持中文女声（Xiaoxiao）、英文等多种音色
+  
+  触发关键词：语音回复、发语音、读出来、播报、朗读、切换音色
 metadata: { "openclaw": { "emoji": "🔊", "homepage": "https://docs.openclaw.ai/tools/tts" } }
 ---
 
